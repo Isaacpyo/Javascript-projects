@@ -1,0 +1,101 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./img/Microsoft_To-Do_2017.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/c74a903629.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>Your Daily To-Do-List</title>
+  </head>
+  <body>
+    <!-- your daily todo -->
+    <header id="title-effect">
+      <div id="stars1"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+      <span>
+        <h1>Your Daily To-Do-List</h1>
+        <p></p>
+        <h6>stay organised</h6>
+      </span>
+    </header>
+
+    <!-- click-here -->
+    <div class="centre-item centre-item-2 active">
+      <h2 class="click-here">Click Here</h2>
+      <i class="fas fa fa-arrow-right"></i>
+    </div>
+    <div class="centre-item-3">
+      <h4>To begin</h4>
+    </div>
+    
+
+    <!-- change your name -->
+    <form action="" class="centre-item form-only">
+      <div class="name-field innactive">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Type your name" required />
+        
+      </div>
+      <div class="innactive">
+        <button <i class="fas fa fa-arrow-right arrow-align"></i></button>
+      </div>
+    </form>
+
+    <!-- main todo list -->
+    <div class="innactive">
+      <form action="" class="main-form">
+        <input
+          type="text"
+          class="to-do-input"
+          placeholder="Type your to-do"
+          required
+        />
+        <button class="to-do-button" type="submit">
+          <i class="fas fa-plus-square"></i>
+        </button>
+        <div class="select">
+          <select name="to-do-select" class="filter-to-do">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="uncompleted">Uncompleted</option>
+          </select>
+        </div>
+      </form>
+      <div class="to-do-container">
+        <ul class="to-do-lists"></ul>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./JS/app.js"></script>
+  </body>
+</html>
+
+<!-- 
+<div>
+    <li></li>
+    <button>
+        
+    </button>
+</div> -->
